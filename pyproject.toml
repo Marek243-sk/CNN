@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cnn"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "kaggle>=2.2.5",
+    "kagglehub>=1.0.3",
+    "matplotlib>=3.11.2",
+    "pandas>=3.1.0",
+    "pytest>=9.2.0",
+    "ruff>=0.17.3",
+    "tensorflow>=2.21.0",
+    "ty>=0.0.95",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cnn_project"]
